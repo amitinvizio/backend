@@ -1,0 +1,28 @@
+POST http://localhost:3001/password
+content-type: application/json
+
+{
+    "password": "123456",
+    "title": "Manager Password"
+}
+
+####
+POST http://localhost:3001/user/login
+Content-Type: application/json
+
+{
+    "email": "pqr@gmail.com",
+    "password": "123456"
+}
+
+####
+POST http://localhost:3001/user/register
+Content-Type: application/json
+
+{
+    "email": "pqr@gmail.com",
+    "password": "123456",
+    "firstname": "xyz",
+    "lastname": "pqr",
+    "username": "abc"
+}
