@@ -5,6 +5,8 @@ content-type: application/json
     "password": "123456",
     "title": "Manager Password"
 }
+####
+GET http://localhost:3001/password
 
 ####
 POST http://localhost:3001/user/login

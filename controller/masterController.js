@@ -1,6 +1,7 @@
 const responseHelper = require('./helper/responseHelper')
 const passwordMasterHelper = require('../database/helpers/passwordMasterHelper')
 const bcrypt = require('bcrypt')
+const { loggers } = require('winston')
 const saltRounds = 10
 
 module.exports = {
@@ -13,7 +14,7 @@ module.exports = {
                 return res.status(500).send(responseHelper.error(500, exception))
             }
         } catch (exception) {
-            console.log(exception)
+            loggers.error('MasterController:getPasswordList', exception)
             return res.status(500).send(responseHelper.error(500, exception))
         }
     },
