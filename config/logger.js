@@ -5,6 +5,7 @@ var winston = require('winston');
     filename: 'logs/myBook-%DATE%.log',
     datePattern: 'YYYY-MM-DD',
     zippedArchive: true,
+    createLogStream: false,
     maxSize: '20m',
     maxFiles: '14d',
     format: winston.format.combine(

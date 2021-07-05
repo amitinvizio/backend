@@ -1,1 +1,8 @@
 {"message":"fileName: MasterController:getPasswordList, message: Success","level":"info","timestamp":"2021-07-05T05:36:13.840Z"}
+{"message":"fileName: MasterController:getPasswordList, message: Success","level":"info","timestamp":"2021-07-05T07:09:45.238Z"}
+{"message":"fileName: MasterController:getPasswordList, message: Success","level":"info","timestamp":"2021-07-05T07:11:09.657Z"}
+{"message":"fileName: MasterController:getPasswordList, message: undefined","level":"info","timestamp":"2021-07-05T07:12:27.373Z"}
+{"message":"fileName: MasterController:getPasswordList, message: TypeError: Cannot read property 'length' of undefined","level":"warn","timestamp":"2021-07-05T07:18:28.398Z"}
+{"message":"fileName: MasterController:getPasswordList, message: TypeError: Cannot read property 'length' of undefined","level":"warn","timestamp":"2021-07-05T07:18:41.559Z"}
+{"message":"fileName: MasterController:getPasswordList, message: [object Object]","level":"info","timestamp":"2021-07-05T07:22:05.214Z"}
+{"message":"fileName: MasterController:getPasswordList, message: Hello,Driver Password,Driver Password,Driver Password,Driver Password,Manager Password,Manager Password,Manager Password","level":"info","timestamp":"2021-07-05T07:23:04.455Z"}

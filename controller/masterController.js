@@ -8,7 +8,11 @@ module.exports = {
         try {
             let passwordList = await passwordMasterHelper.getPasswordList()
             if (passwordList) {
-                log('MasterController:getPasswordList', 'Success', 'info')
+                var title = []
+                for (let i = 0; i < passwordList.length; i++) {
+                    title[i] = passwordList[i].title
+                }
+                log('MasterController:getPasswordList', title, 'info')
                 return res.status(200).send(responseHelper.successWithResult(200, null, passwordList))
             } else {
                 return res.status(500).send(responseHelper.error(500, exception))
@@ -38,5 +42,5 @@ module.exports = {
         }
     },
 
-    
+
 }
