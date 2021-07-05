@@ -2,7 +2,6 @@ var winston = require('winston');
   require('winston-daily-rotate-file');
  
   var transport = new (winston.transports.DailyRotateFile)({
-    level: 'info',
     filename: 'logs/myBook-%DATE%.log',
     datePattern: 'YYYY-MM-DD',
     zippedArchive: true,
